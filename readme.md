@@ -34,7 +34,7 @@ Password: test
 
 ###### endpoint and message body
 <pre>
-    - http://localhost:8080/api/v1/customMessage?queue=queue-a
+    POST - http://localhost:8080/api/v1/customMessage?queue=queue-a
 
     {
         "message": "test message to queue a"
@@ -42,7 +42,7 @@ Password: test
 </pre>
 
 <pre>
-    - http://localhost:8080/api/v1/customMessage?queue=queue-b
+    POST - http://localhost:8080/api/v1/customMessage?queue=queue-b
 
     {
         "message": "test message to queue b"
@@ -53,7 +53,7 @@ Password: test
 
 ###### endpoint and message body
 <pre>
-    - http://localhost:8080/api/v1/customMessage
+    POST - http://localhost:8080/api/v1/customMessage
 
     {
         "message": "test message to all queues"
@@ -65,7 +65,7 @@ Password: test
 ###### endpoint and message body
 
 <pre>
-    - http://localhost:8080/api/v1/customMessage?type=urgent
+    POST - http://localhost:8080/api/v1/customMessage?type=urgent
 
     {
         "message": "test message urgent to queueA"
@@ -73,7 +73,7 @@ Password: test
 </pre>
 
 <pre>
-    - http://localhost:8080/api/v1/customMessage?type=important
+    POST - http://localhost:8080/api/v1/customMessage?type=important
 
     {
         "message": "test message important to queueB"
@@ -86,7 +86,7 @@ Password: test
 ###### endpoint and message body
 
 <pre>
-    - http://localhost:8080/api/v1/customMessage/queueA
+    POST - http://localhost:8080/api/v1/customMessage/queueA
 
     {
         "message": "test message to queue a"
@@ -94,7 +94,7 @@ Password: test
 </pre>
 
 <pre>
-    - http://localhost:8080/api/v1/customMessage/queueB
+    POST - http://localhost:8080/api/v1/customMessage/queueB
 
     {
         "message": "test message to queue b"
