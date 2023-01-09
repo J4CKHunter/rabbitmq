@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  pubsub:
+    image: # insert image address on dockerhub e.g. j4ckhunter/producer:1.00
+    container_name: pubsub
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./spring-rabbitmq-pub-sub:/app
+    depends_on:
+      - rabbitmq
