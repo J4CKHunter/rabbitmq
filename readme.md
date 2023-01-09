@@ -18,7 +18,7 @@
 #### run rabbitmq instance with default id&password on docker:
 
 ```console
-- docker run -d --hostname rabbitmq --name rabbitmq-container -p 5672:5672 -p 15672:15672 
+docker run -d --hostname rabbitmq --name rabbitmq-container -p 5672:5672 -p 15672:15672 
 -e RABBITMQ_DEFAULT_USER=test -e RABBITMQ_DEFAULT_PASS=test rabbitmq:3.10-management
 ```
 #### you can reach the RabbitMQ Management UI in browser with the endpoint and the credentials
